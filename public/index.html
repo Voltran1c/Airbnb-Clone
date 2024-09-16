@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBheFWGH5E1B5B-vdhAOaN7e6HXesAzN-ukA&s"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed top-0 bg-white"
+      >
+        <img src="/public/img/airbnb.png" alt="" class="h-12 w-28" />
+        <div
+          class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96"
+        >
+          <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+          <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+          <button class="text-sm font-medium text-gray-500 px-4">
+            Add guests
+          </button>
+          <i
+            class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"
+          ></i>
+        </div>
+        <div class="flex justify-end items-center gap-8">
+          <button class="text-sm font-medium">Airbnb your home</button>
+          <span class="material-symbols-outlined"> language </span>
+          <div
+            class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20 py-1.25 pr-1.25 pl-3"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <button
+              class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px] font-semibold"
+            >
+              E
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center h-24 space-x-5 top-20 fixed bg-white w-screen justify-center"
+      >
+        <div class="flex items-center justify-center space-x-16">
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/icon.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/top city.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/rooms.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/bed&breakfast.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/omg.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/new.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/vineyard.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/mansion.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/trending.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/a-frames.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/view.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/cabins.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/national.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-400 hover:text-black gap-2"
+          >
+            <img src="./img/tiny homes.png" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Icons</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined pl-4"> arrow_circle_right </span>
+        <div
+          class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border"
+        >
+          <span class="material-symbols-outlined pl-2"> sync_alt </span>
+          <p class="text-sm font-medium pr-2">Filters</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-48">
+        <div
+          class="flex justify-between items-center p-4 border rounded-xl w-[600px] h-16"
+        >
+          <div class="flex justify-start">
+            <p class="border-r-2 border-gray-100 pr-4 text-base font-medium">
+              Display total price
+            </p>
+            <p class="pl-4 text-gray-400 text-base">
+              Includes all fees, before taxes
+            </p>
+          </div>
+          <span class="material-symbols-outlined"> toggle_off </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-14 mx-10 flex justify-center items-center">
+      <div class="grid grid-cols-4 gap-10">
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img1.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img2.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img3.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img4.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img5.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img6.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img1.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img2.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img3.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img4.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img5.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img6.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img1.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img2.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img3.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img4.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img5.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img6.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img1.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./img/img2.jpeg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium">Authen, Greece</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">7,649 kilometers away</p>
+          <p class="text-sm text-gray-500">30 Nov - 5 Dec</p>
+          <p class="text-sm font-medium mt-2">฿5,157 night</p>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="flex justify-between h-12 items-center px-10 fixed bottom-0 w-screen bg-white border border-t-1"
+    >
+      <div class="flex text-sm font-base space-x-4">
+        <p>© 2024 Airbnb, Inc.</p>
+        <p>·</p>
+        <p>Terms</p>
+        <p>·</p>
+        <p>Sitemap</p>
+        <p>·</p>
+        <p>Privacy</p>
+        <p>·</p>
+        <p>Your Privacy Choices</p>
+        <p>·</p>
+      </div>
+      <div class="flex space-x-4 text-sm font-medium items-center mr-4">
+        <span class="material-symbols-outlined"> language </span>
+        <p>English (US)</p>
+        <p>฿ THB</p>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+    </footer>
+  </body>
+</html>
